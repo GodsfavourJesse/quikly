@@ -1,0 +1,575 @@
+/* ------------------------------------------------------------------------FIle Name: responsive.css-------------------------- */
+
+
+:root{
+    --color-dark: #666666;
+    --color-white: #f1f1f1;
+    --bg-color: #2b2a29;
+    --hover-color: #f26522;    
+    --pure-white: #fff; 
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+/* max-width: 700px starts */
+@media only screen and (max-width: 700px) {
+    .container{
+        /* width: 700px; */
+        /* height: 700px; */
+        /* background-position: center;
+        /* background-size: cover; */ 
+        /* background-attachment: fixed;  */
+        background-size: 100% 100%;
+        height: auto;
+        padding: 10px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container header{
+        display: none;
+    }
+    #openDropDown{
+        display: none;
+    }
+    .logo_section .logo{
+        margin-top: 0px;
+    }
+    .navbar{
+        width: 540px;
+        /* height: 10rem; */
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+       justify-content: center;
+       margin-top: 3rem;
+    }
+    .group{
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin-bottom: 20px; */
+    }
+    .langMenu{
+        top: 24%;
+        left: 13%;
+        width: 150px;
+    }
+    .navItem{
+        width: 500px;
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    .navbar .search_box{
+        width: 450px;
+        background: var(--pure-white);
+        height: 2.5rem;
+        border-radius: 5px;
+        border: 1px solid #dad3d3;
+        border-right: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .search_box input{
+        font-family: 'poppins';
+        width: 450px;
+        height: 2.5rem;
+        background: transparent;
+        border: 0;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: var(--bg-color);
+        font-style: normal;
+        font-weight: 600px;
+    }
+    .search_box i{
+        background: var(--hover-color);
+        height: 2.5rem;
+        width: 40px;
+        padding: 10px 0px;
+        font-size: 14px;
+        color: var(--pure-white);
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .group .lang_box{
+        background: none;
+        text-align: left;
+        padding: 0;
+        display: flex;
+        align-items: start;
+        width: 100px;
+        height: 1.5rem;
+        margin: 0;
+    }
+    .lang_box a{
+        color: var(--pure-white);   
+    }
+    .icons{
+        padding: 0;
+    }
+    .icons p{
+        font-size: 14px;
+    }
+    .slide1 h1{
+        margin-top: 5px;
+        font-size: 35px;
+        text-transform: uppercase;
+        line-height: 60px;
+        font-weight: 600;
+        color: var(--pure-white);
+    }
+    .slide1 a{
+        margin-top: 30px;
+    }
+    .slideControl{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .controlPrev{
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    .controlNext{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        /* flex-direction: column-reverse; */
+    }
+    #title{
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .fashion_box .fashion_item{
+        width: 170px;
+        height: 396px;
+        display: grid;
+        grid-template-rows: 50px, 1fr, 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0px 0 30px 10px #f0f0f0;
+        background: var(--pure-white);
+        margin-bottom: 20px;
+    }
+    .fashion_item h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .fashion_item p{
+        font-size: 13px;
+    }
+    .fashion_item img{
+        width: 130px;
+        height: 169px;
+    }
+    .fashion_item .btn a{
+        font-size: 13px;
+    }
+    .fashion_box .fashion_item:nth-child(3) img{
+        width: 130px;
+        height: 244px;
+    }
+    .fashionControl,
+    .electronicControl, 
+    .jewelleryControl{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .electronic_section{
+        margin-top: 10px;
+    }
+    .electronic_section h1{
+        font-size: 25px;
+        margin-bottom: 3%;
+    }
+    .electronic_box .electronic_item{
+        width: 170px;
+        height: 295px;
+        display: grid;
+        grid-template-rows: 50px, 1fr, 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0px 0 30px 10px #f0f0f0;
+        background: var(--pure-white);
+        margin-bottom: 20px;
+    }
+    .electronic_item .info h4,
+    .jewellery_item .info h4{
+        font-size: 14px;
+        letter-spacing: 0px;
+        font-weight: 500;
+    }
+    .electronic_item .info p,
+    .jewellery_item .info p{
+        font-size: 13px;
+    }
+    .electronic_item img{
+        width: 130px;
+        height: 110px;
+    }
+    .electronic_item .btn a,
+    .jewellery_item .btn a{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .electronic_item .btn a:nth-child(1),
+    .jewellery_item .btn a:nth-child(1){
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .electronic_box .electronic_item:nth-child(3) img{
+        width: 130px;
+        height: 144px;
+    }
+    .jewellery_section{
+        margin-top: 10px;
+    }
+    .jewellery_section h1{
+        font-size: 24px;
+    }
+    .jewellery_box .jewellery_item{
+        width: 160px;
+        height: 300px;
+    }
+    .jewellery_item img{
+        width: 130px;
+        height: 130px;
+    }
+    .footer{
+        height: 477px;
+    }
+    .footer_section footer .custom_menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .subscribe_box input:nth-child(1){
+        font-size: 14px;
+        padding-bottom: 10px;
+        padding-right: 80px;
+    }
+    .subscribe_box input:nth-child(2){
+        position: absolute;
+        right: 27%;
+        background: transparent;
+        color: var(--hover-color);
+        font-size: 14px;
+        cursor: pointer;
+        border: 0;
+        top: 29%;
+        font-weight: 300;
+    }
+    .copyright{
+        width: 700px;
+        border-top: 1px solid var(--color-white);
+        padding-top: 10px;
+        background: var(--bg-color);
+        padding: 10px 0;
+    }
+}
+/* max-width: 700px ends */
+
+
+/* max-width: 504px starts */
+@media only screen and (max-width: 504px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .langMenu{
+        top: 25%;
+        left: 11%;
+        width: 150px;
+    }
+    .group{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navItem{
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navItem span i{
+        font-size: 38px;
+    }
+    .navbar .search_box{
+        width: 350px;
+        height: 2rem;
+    }
+    .search_box input{
+        height: 2rem;
+    }
+    .search_box i{
+        font-size: 13px;
+        height: 2rem;
+    }
+    .group .lang_box a{
+        font-size: 12px;
+    }
+    .icons p{
+        font-size: 12px;
+    }
+    .icons p i{
+        font-size: 10px;
+    }
+    .slide1 h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .slideControl span{
+        width: 30px;
+        height: 30px;
+        top: 60px;
+    }
+    .fashion_section .fashion_box,
+    .electronic_section .electronic_box,
+    .jewellery_section .jewellery_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .fashion_box .fashion_item{
+        width: 470px;
+        height: 529px;
+    }
+    .fashion_item h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .fashion_item p{
+        font-size: 16px;
+    }
+    .fashion_item img{
+        width: 284px;
+        height: 369px;
+    }
+    .fashion_item .btn a,
+    .electronic_item .btn a,
+    .jewellery_item .btn a{
+        font-size: 16px;
+    }
+    .fashion_box .fashion_item:nth-child(3) img{
+        width: 189px;
+        height: 356px;
+    }
+    .fashionControl,
+    .electronicControl,
+    .jewelleryControl{
+        display: none;
+    }
+    .c_t_a{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+        padding: 20px 20px;
+    }
+    .c_t_a button{
+        width: 150px;
+        height: 2rem;
+        border: 0;
+        background: transparent;
+        font-size: 14px;
+        color: var(--bg-color);
+        text-transform: capitalize;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .c_t_a button:hover{
+        color: var(--hover-color);
+        font-weight: bold;
+    }
+    .electronic_box .electronic_item{
+        width: 470px;
+        height: 452px;
+    }
+    .electronic_item img{
+        width: 363px;
+        height: 292px;
+    }
+    .electronic_item .info h4,
+    .jewellery_item .info h4{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .electronic_item .info p,
+    .jewellery_item .info p{
+        font-size: 16px;
+    }
+    .electronic_box .electronic_item:nth-child(3) img{
+        width: 263px;
+        height: 292px;
+    }
+    .electronic_item .btn a:nth-child(1){
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .jewellery_box .jewellery_item{
+        width: 470px;
+        height: 472px;
+    }
+    .jewellery_item img{
+        width: 312px;
+        height: 312px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .copyright span{
+        font-size: 14px;
+    }
+    .copyright a{
+        font-size: 14px;
+    }
+}
+/* responsive max-width: 504px ends */
+
+
+/* responsive max-width: 360px starts */
+
+@media only screen and (max-width: 360px) {
+    .container{ 
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+       background-size: cover;
+       background-position: center;
+       background-clip: initial;
+    }
+    .group{
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar{
+        margin-top: 2rem;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navItem{
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navItem .search_box{
+        width: 250px;
+        height: 2.5rem;
+    }
+    .search_box input{
+        width: 250px;
+        height: 2.5rem;
+    }
+    .search_box i{
+        height: 2.5rem;
+        font-size: 14px;
+    }
+    .navItem span i{
+        font-size: 45px;
+    }
+    .slider{
+        margin-top: 5rem;
+    }
+    .slide1 h1{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .fashion_box .fashion_item,
+    .jewellery_box .jewellery_item{
+        width: 330px;
+        height: 536px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fashion_item img{
+        width: 279px;
+        height: 364px;
+    }
+    .fashion_item h4{
+        font-weight: 500px;
+    }
+    .fashion_item:nth-child(3) img{
+        width: 185px;
+        height: 356px;
+    }
+    .electronic_item:nth-child(3) img{
+        width: 263px;
+        height: 292px;
+    }
+    .electronic_box .electronic_item{
+        width: 330px;
+        height: 410px;
+    }
+    .electronic_box .electronic_item img{
+        width: 290px;
+        height: 233px;
+    }
+    .fashion_item .btn,
+    .electronic_item .btn,
+    .jewellery_item .btn{
+        padding: 0 30px;
+    }
+    .subscribe_box input:nth-child(2){
+        position: absolute;
+        right: 16%;
+        background: transparent;
+        color: var(--hover-color);
+        font-size: 18px;
+        cursor: pointer;
+        border: 0;
+        top: 30%;
+        font-weight: 300;
+    }
+    .copyright{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 50px;
+    }
+    .copyright span{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+}
