@@ -28,7 +28,7 @@ body{
 .container {
     width: 100%;
     float: left;
-    background-image: url(/images/banner-bg.png);
+    background-image: url(/quikly/images/banner-bg.png);
     background-position: center;
     background-size: cover;
     height: 700px;
